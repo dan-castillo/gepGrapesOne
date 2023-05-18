@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import grapesjs from 'node_modules/grapesjs';
-import 'grapesjs-blocks-basic'
+import 'grapesjs-blocks-basic';
 
 @Component({
   selector: 'app-gjs',
@@ -16,7 +16,7 @@ export class GjsComponent implements OnInit
   
   ngOnInit()
   { 
-    const plugins = ['gjs-blocks-basic','grapesjs-preset-webpage','grapesjs-plugin-forms', 'grapesjs-tui-image-editor','grapesjs-plugin-toolbox'];
+    const plugins = ['gjs-blocks-basic','grapesjs-preset-webpage','grapesjs-plugin-forms','grapesjs-tui-image-editor','grapesjs-plugin-toolbox'];
     this.editor = grapesjs.init({
       container: '#gjs',
       fromElement: true,
@@ -288,7 +288,7 @@ export class GjsComponent implements OnInit
             flexGrid: true, // use flexbox instead of tables
             addBasicStyle: true,
             blocks: ['column1', 'column2', 'column3', 'column3-7', 'text', 'link', 'image', 'video', 'map']
-          },
+          }
       },
     });
   }
